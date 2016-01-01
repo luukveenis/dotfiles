@@ -1,0 +1,4 @@
+Host tatooine
+  HostName 104.131.128.225
+  Port 22
+  User root
