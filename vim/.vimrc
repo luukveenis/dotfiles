@@ -4,6 +4,9 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
 " Fzy (DKendal / JHawthorn)
 Plugin 'Dkendal/fzy-vim'
 
@@ -84,8 +87,8 @@ nmap <cr> :
 nmap K \<noop>
 vmap K \<noop>
 
-" Clear Highlighting on Escape
-nnoremap <esc> :noh<cr><esc>
+" Clear Highlighting on Leader*2
+nnoremap <silent> <leader><leader> :noh<cr>
 
 " Leader shortcuts
 nnoremap <leader>ft :TFzyLsAg<cr>
